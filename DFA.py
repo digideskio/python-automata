@@ -47,10 +47,10 @@ class DFA:
         """
         print ""
         print "This DFA has %s states" % len(self.states)
-        print "States:", self.states
-        print "Alphabet:", self.alphabet
+        print "States:", sorted(self.states)
+        print "Alphabet:", sorted(self.alphabet)
         print "Starting state:", self.start
-        print "Accepting states:", self.accepts
+        print "Accepting states:", sorted(self.accepts)
         print "Transition function:"
         print "\t","\t".join(map(str, sorted(self.states)))
         for c in self.alphabet:
